@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ds logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>WEB Design Studio</title>
+<style>
+   .parent{
+       position: fixed;
+       width: 1520px;
+       height: 100px;
+       background: rgb(86, 168, 201);
+       right: 0;
+       left: 0;
+       top: 0;
+       overflow: hidden;
+       z-index: 2;
+       
+   }
+    li{
+        color: rgba(33, 56, 107, 0.932);
+       text-decoration: none;
+       display: inline-block;
+       padding: 40px;
+       transition: 0.4s;
+       font-family: Arial, Helvetica, sans-serif;
+       
+       
+   }
+   li:hover{
+       color: rgba(0, 0, 0, 0.438);
+       font-size: 18px;    
+   }
+
+   html{
+       width: 1500px;
+       height: 2400px;
+   }
+   .parent2{
+            position: absolute;
+            left: 35%;
+           
+   }
+   .logo{
+       width: 80px;
+       height: 80px;
+       border-radius: 50%;
+       position:fixed;
+       left: 20px;
+       margin: 10px;
+       overflow: hidden;
+       transition: 0.4s;
+       opacity: 0.8;
+   }
+
+   .logo:hover{
+       width: 84px;
+       height: 84px;
+       opacity: 1;
+       
+   }
+
+   
+   #main1{
+       width: 1300px;
+       height: 800px;
+       position: relative;
+       top: 120px;
+       z-index: -1;
+      
+   }
+
+   #main2{
+       width: 1300px;
+       height: 800px;
+   }
+
+   #main3{
+       width: 1300px;
+       height: 800px;
+   }
+   
+   .klor{
+       width: 600px;
+       height:600px;
+        background-color: rgb(129, 233, 221);
+        border-radius: 43%;
+        position: relative;
+        top: 130px;
+        right: 250px;
+        z-index: -1;
+        animation-name: keyy;
+        animation-duration: 2s;
+   }
+   @keyframes keyy {
+        from{
+              right: 400px;
+        }
+
+        to{
+            right: 250px;
+        }
+   }
+  
+   .web{
+       font-size: 72px;
+       position: relative;
+       top: -500px;
+       left: 120px;
+       z-index: 1;
+      
+   }
+   .web2{
+    font-size: 22px;
+       position: relative;
+       top: -570px;
+       left: 120px;
+       font-family: Arial, Helvetica, sans-serif;
+       z-index: 1;
+   }
+   .photo1{
+       position: relative;
+       width: 900px;
+       height: 700px;
+       top: -720px;
+       left: 600px;
+       z-index: -1;
+   }
+   .btn{
+
+    width: 200px;
+    height: 70px;
+    background-color: rgb(71, 204, 204);
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 620px;
+    left: 220px;
+    animation: btn1 1s infinite alternate;
+   }
+
+   @keyframes btn1{
+       from{
+        top: 620px;
+    left: 220px;
+       }
+
+       to{
+        top: 560px;
+    left: 240px;
+       }
+   }
+   .aboutme{
+       width: 1200px;
+       height: 300px;
+       position: absolute;
+       top: 2000px;
+       left: 180px;
+       font-family: fantasy;
+       font-size:52px;
+       animation: abb 4s infinite alternate;
+   }
+
+   @keyframes abb {
+         from{
+                color: deepskyblue;
+         }
+
+         to{
+              color: blueviolet;
+         }
+   }
+   footer{
+       width: 100%;
+       height: 200px;
+       background-color: rgb(86, 168, 201);
+       position: absolute;
+       top: 2400px;
+       right: 0;
+       padding: 0;
+       left: 0;
+   }
+   .FT{
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 24px;
+       color: rgb(69, 201, 201);
+   }
+   .FT:hover{
+       font-size: 26PX;
+       color: rgb(36, 146, 146);
+   }
+   .FT1{
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 19px;
+   }
+</style>
+</head>
+<body>
+    
+    <nav>
+      
+      <div class="parent">
+       <a href="#main1"><img src="ds logo.png" class="logo"></a>
+        <div class="parent2">
+         <a href="#main1"><li class="n1">HOME</li></a>
+         <a href="#main2"><li class="n2">MY WORKS</li></a>
+         <a href="#main3"><li class="n3">ABOUT ME</li></a>
+        
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <div class="parentmain">
+        <div id="main1">
+            <div class="klor"></div>
+            <p class="web">WEB DESIGN<br> studio
+            </p>
+            <p class="web2">studio of web design,web app. and logo<br> design.</p>
+        </div>
+            <button onclick="document.location='https://www.facebook.com/'" class="btn">WRITE ME</button>
+
+        
+
+        <div id="main2">
+          <img src="mockup.png" class="photo1">
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="ТАХИ.jpg" style="width:100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="колиб.jpg" style="width:100%">
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="gold.jpg" style="width:100%">
+             
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+        </div>
+
+        <div id="main3">
+            <div class="aboutme">hello.
+                My name is Edo
+                I am from Armenia.
+                i'm a beginer programmer and web designer. This is  my web site.
+                Here my works.
+                Other my works in telegram.
+                The end :)</div>
+        </div>
+             </div>
+    </main>
+    <footer>
+               <ul class="FT">
+                 <a href="https://t.me/DesignStudiooo"><li>TELEGRAM</li></a>
+                 <a href="https://www.instagram.com/ed0.969/"><li>INSTAGRAM</li></a>
+                 <a href="https://vk.com/public210290582"><li>WK</li></a>
+               </ul>
+               <p class="FT1">21-22 by EDO</p>
+    </footer>
+
+ <script src="app.js"></script>
+</body>
+</html>
